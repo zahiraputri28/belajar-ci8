@@ -19,7 +19,7 @@
 
         <?php
         if (session()->get('role') == 'admin') {
-        ?>  
+        ?> 
         
         
         <li class="nav-item">
@@ -28,6 +28,27 @@
                 <span>Produk</span>
             </a>
         </li><!-- End Produk Nav --> 
+
+        <li class="nav-item">
+            <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
+                <i class="bi bi-receipt"></i>
+                <span>Profile</span>
+            </a>
+        </li><!-- End Profile Nav --> 
+
+        <li class="nav-item">
+            <a class="nav-link <?php echo (uri_string() == 'faq') ? "" : "collapsed" ?>" href="faq">
+                <i class="bi bi-receipt"></i>
+                <span>FAQ</span>
+            </a>
+        </li><!-- End Faq Nav --> 
+
+        <li class="nav-item">
+            <a class="nav-link <?php echo (uri_string() == 'contact') ? "" : "collapsed" ?>" href="contact">
+                <i class="bi bi-receipt"></i>
+                <span>Contact</span>
+            </a>
+        </li><!-- End Contact Nav --> 
 
         <?php
         }
